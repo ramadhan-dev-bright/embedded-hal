@@ -485,7 +485,7 @@ pub trait Write: ErrorType {
     }
 }
 
-/// Blocking seek within streams.\
+/// Blocking seek within streams.
 ///
 /// The `Seek` trait provides a cursor which can be moved within a stream of
 /// bytes.
