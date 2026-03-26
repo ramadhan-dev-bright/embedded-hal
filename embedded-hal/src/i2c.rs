@@ -81,6 +81,7 @@
 //!     }
 //!
 //!     pub fn read_temperature(&mut self) -> Result<u8, I2C::Error> {
+//!         //send the register address we want to read, then receive the data into 'temp'
 //!         let mut temp = [0];
 //!         self.i2c.write_read(ADDR, &[TEMP_REGISTER], &mut temp)?;
 //!         Ok(temp[0])
@@ -106,6 +107,7 @@
 //!
 //!     pub fn read_temperature(&mut self) -> Result<u8, I2C::Error> {
 //!         let mut temp = [0];
+//!         //send the register address we want to read, then receive the data into 'temp'
 //!         self.i2c.write_read(ADDR, &[TEMP_REGISTER], &mut temp)?;
 //!         Ok(temp[0])
 //!     }
